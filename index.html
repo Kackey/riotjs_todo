@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>【反旗を翻せ！】超軽量Webフレームワーク「Riot.js」入門ハンズオン！</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <p>【反旗を翻せ！】</p>
+      <h4>超軽量Webフレームワーク「Riot.js」入門ハンズオン！</h4>
+      <p style="align:right"><a href="http://d-cube.connpass.com/event/39739/">http://d-cube.connpass.com/event/39739/</a></p>
+      <navi></navi>
+    </div>
+    <div class="container">
+      <!-- カスタムタグがmountされるタグ -->
+      <route></route>
+    </div>
+  </body>
+
+  <!-- riot.jsとコンパイラを読み込む(インブラウザ・コンパイル) -->
+  <script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
+  <!-- カスタムタグを定義しているファイルの読み込み -->
+  <script type="riot/tag" src="tags/navi.tag"></script>
+  <script type="riot/tag" src="tags/home.tag"></script>
+  <script type="riot/tag" src="tags/todo.tag"></script>
+  <script type="riot/tag" src="tags/add.tag"></script>
+  <script type="riot/tag" src="tags/commands.tag"></script>
+  <script type="riot/tag" src="tags/edit.tag"></script>
+  <!-- アプリケーション全体的な動きを総括するjs -->
+  <script src="scripts/app.js" defer></script>
+
+</html>
